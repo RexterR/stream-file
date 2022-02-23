@@ -10,7 +10,7 @@
 
 ## Usage
 
-<img src="https://raw.githubusercontent.com/RexterR/stream-file/main/upload.gif">
+<img src="upload.gif">
 
 ```bash
 ~
