@@ -36,7 +36,6 @@ var uploadCmd = &cobra.Command{
 	Use:   "upload",
 	Short: "uplaods all file/s concurrently to scyllaDB",
 	Long: `Upload takes --flag dir to find the file/s to upload. For example:
-
 	fileServer upload --dir "input-path"  it can be relative path as well
 	fileServer upload -d "input-path"
 	both will yield the same result.`,
