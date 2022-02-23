@@ -10,7 +10,7 @@
 
 ## Usage
 
-<img src="upload.gif">
+<img src="https://user-images.githubusercontent.com/59254445/155373742-5837ea54-d8f4-4076-bb48-368685c6f4ba.png">
 
 ```bash
 ~
