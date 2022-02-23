@@ -37,8 +37,8 @@ var uploadCmd = &cobra.Command{
 	Short: "uplaods all file/s concurrently to scyllaDB",
 	Long: `Upload takes --flag dir to find the file/s to upload. For example:
 
-	apex upload --dir "input-path"  it can be relative path as well
-	apex upload -d "input-path"
+	fileServer upload --dir "input-path"  it can be relative path as well
+	fileServer upload -d "input-path"
 	both will yield the same result.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		dirName, err := cmd.Flags().GetString("dir")
