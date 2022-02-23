@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package uploadSvc;
+option go_package = "internal/pb"; 
+
+message UploadRequest {
+    oneof data {
+      FileInfo info = 1;
+      bytes chunk_data = 2;
+    };
+  }
+  
+ message FileInfo {
+    string fileName = 1;
+    string type = 2;
+  }
+  
+  message UploadResponse {
+    string id = 1;
+    uint32 total_size = 2;
+    }
+
+  service UploadService{
+    rpc UploadFile(stream UploadRequest) returns (UploadResponse) {};
+   }
